@@ -1,10 +1,4 @@
-
-Below is a **from-scratch, step-by-step implementation guide** you can follow in a **Test AWS account**, assuming **no prior networking setup exists**.
-I’ll keep it **practical, console-first**, and aligned exactly to your **Acceptance Criteria**.
-(You can later translate this to Terraform/CDK once the concepts are clear.)
-
-I’ll assume **Amazon Web Services (AWS)** and a **single region** (for example `us-east-1`).
-Even though you said AZs are not a concern *right away*, we’ll still design it **Multi-AZ ready** (minimum effort now, no redesign later).
+Design it **Multi-AZ ready** (minimum effort now, no redesign later).
 
 ---
 
@@ -250,11 +244,4 @@ This VPC is now **production-style**, even in test:
 * ALB / NLB in public subnets
 * Event-driven services with secure egress
 
-If you want, next we can:
 
-1. Convert this to **Terraform**
-2. Add **VPC Endpoints** (S3, ECR, STS)
-3. Prepare **EKS-specific networking**
-4. Add **flow logs & monitoring**
-
-Just tell me the next step 👍
